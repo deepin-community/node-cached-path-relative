@@ -1,5 +1,76 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-cached-path-relative (1.1.0+~1.0.0-3) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-cached-path-relative: Add :any qualifier for nodejs dependency.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 21 Nov 2022 01:28:27 +0000
+
+node-cached-path-relative (1.1.0+~1.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Replace tap+tape by tape in test (Closes: #1009510)
+
+ -- Yadd <yadd@debian.org>  Sun, 17 Apr 2022 07:35:43 +0200
+
+node-cached-path-relative (1.1.0+~1.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Embed typescript declarations and repack
+  * New upstream release 1.1.0 (Closes: CVE-2021-23518)
+
+ -- Yadd <yadd@debian.org>  Wed, 26 Jan 2022 12:30:15 +0100
+
+node-cached-path-relative (1.0.2-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on dpkg-dev.
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Update debian/watch to use npm registry
+  * Use sh-sequence-nodejs auto test & install
+
+ -- Yadd <yadd@debian.org>  Mon, 01 Nov 2021 11:34:38 +0100
+
+node-cached-path-relative (1.0.2-2) unstable; urgency=medium
+
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Fix field name typos in debian/copyright.
+  * Update standards version to 4.4.1, no changes needed.
+  * Apply multi-arch hints.
+    + node-cached-path-relative: Add Multi-Arch: foreign.
+  * Update standards version to 4.5.0, no changes needed.
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-tap, node-tape and
+      nodejs.
+    + node-cached-path-relative: Drop versioned constraint on nodejs in Depends.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sat, 28 Aug 2021 23:53:05 +0100
+
+node-cached-path-relative (1.0.2-1) unstable; urgency=medium
+
+  * New upstream version: fix prototype pollution vulnerability
+  * Move to /usr/share
+  * Bump debhelper and policy
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 04 Sep 2019 16:01:17 +0200
+
+node-cached-path-relative (1.0.1-2) unstable; urgency=medium
+
+  * Move to salsa
+  * Bump policy and comapt (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 16 May 2018 18:02:08 +0200
+
+node-cached-path-relative (1.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #860471)
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 17 Apr 2017 14:57:56 +0200
